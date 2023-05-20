@@ -4,8 +4,7 @@ USER root
 RUN apt-get update
 RUN apt-get install -y python3 make gcc g++
 
-RUN pip install torch torchvision cuda-python
-RUN pip install cmake
+RUN pip install torch torchvision cuda-python cmake pyyaml opencv-python
 
 RUN mkdir -p /clip
 WORKDIR /clip
