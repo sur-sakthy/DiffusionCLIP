@@ -1,4 +1,4 @@
-FROM anibali/pytorch
+FROM anibali/pytorch:2.0.0-cuda11.8-ubuntu22.04
 USER root
 
 RUN apt-get update
