@@ -1,7 +1,8 @@
 FROM anibali/pytorch
 USER root
 
-RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-virtualenv
+RUN apt-get update
+RUN apt-get install -y python3 make gcc g++
 
 RUN pip install torch torchvision cuda-python
 RUN pip install cmake
